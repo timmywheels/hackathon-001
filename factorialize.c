@@ -32,7 +32,7 @@ int main(int argc, string argv[])
 {
     if(argc != 2)
     {
-        printf("Please enter a number to factorialize:\n");
+        printf("Usage: ./factorialize <integer>\n");
         return 1;
     }
 
