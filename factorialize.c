@@ -1,9 +1,9 @@
 #include <cs50.h>
 #include <stdio.h>
 
-long long factorialize(int num)
+unsigned long long int factorialize(int num)
 {
-        long long res;
+        unsigned long long int res;
 
         // If num is less than 0, reject it
         if(num < 0)
@@ -38,7 +38,7 @@ int main(int argc, string argv[])
 
     int num = atoi(argv[1]);
 
-    long long res = factorialize(num);
-    printf("%lli\n", res);
+    unsigned long long int res = factorialize(num);
+    printf("%llu\n", res);
 
 }
