@@ -4,6 +4,11 @@
 bool isPrime(int number){
       for (int i = 2; i < number; i++){
 
+          if(number < 2)
+          {
+              return false;
+          }
+
           if(number % i == 0){
             //   printf("No\n");
                 return false;
@@ -37,7 +42,7 @@ int main(int argc, string argv[])
 {
     if(argc != 2)
     {
-        // printf("Please enter a number to factorialize:\n");
+        printf("Usage: ./sumPrimes <integer>\n");
         return 1;
     }
 

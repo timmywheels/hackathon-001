@@ -25,10 +25,6 @@ int sumFibs(int num)
 
     }
 
-    // printf("Number: %i\n", num);
-    // printf("Answer: %i\n", answer);
-
-
     return answer;
 }
 
@@ -36,7 +32,7 @@ int main(int argc, string argv[])
 {
     if(argc != 2)
     {
-        // printf("Please enter a number to factorialize:\n");
+        printf("Usage: ./fibonacci <integer>\n");
         return 1;
     }
     argv[0] = "1";
@@ -45,7 +41,6 @@ int main(int argc, string argv[])
 
     int myAnswer = sumFibs(num);
 
-    printf("My answer: %i\n", myAnswer);
+    printf("%i\n", myAnswer);
     return 0;
 }
-
